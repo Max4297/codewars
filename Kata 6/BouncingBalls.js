@@ -29,7 +29,6 @@ function bouncingBall(h, bounce, window) {
   }
 
   let count = -1;
-  let hball = 0;
 
   for (let i = h; i > window; i = i * bounce) {
     count += 2;
