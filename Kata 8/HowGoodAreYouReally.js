@@ -16,5 +16,3 @@ function betterThanAverage(classPoints, yourPoints) {
   }, 0);
   return cer / classPoints.length <= yourPoints ? true : false;
 }
-
-betterThanAverage([2, 3], 5);
