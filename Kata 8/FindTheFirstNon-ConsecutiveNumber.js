@@ -22,20 +22,12 @@ Nim: none(int) (See options)
 */
 
 function firstNonConsecutive(arr) {
-  if (arr == []) null;
+  let res = arr[0];
 
-  let before = arr[0];
+  res = arr.find((current, index) => current !== res + index);
 
-  for (let i = 1; i < arr.length; i++) {
-    let elem = arr[i];
-    if (before + 1 !== elem) {
-      return elem;
-    } else {
-      before = elem;
-    }
-  }
-
-  if (before == arr[arr.length - 1]) return null;
+  if (res == arr[arr.length]) return null;
+  return res;
 }
 
 firstNonConsecutive([-4, -3, -1, 0, 1, 2, 3, 5]);
