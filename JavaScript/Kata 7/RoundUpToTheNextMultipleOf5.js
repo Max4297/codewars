@@ -18,6 +18,6 @@ Input may be any positive or negative integer (including 0).
 You can assume that all inputs are valid integers.
 */
 
-function roundToNext5(n) {}
-
-roundToNext5(-7);
+function roundToNextMultipleOf5(number) {
+  return Math.ceil(number / 5) * 5;
+}
